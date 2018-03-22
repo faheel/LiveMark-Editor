@@ -23,23 +23,13 @@ setInterval(function() {
 /*
     Menu
 */
-var menuEl = document.querySelector('#menu');
-var menu = new mdc.menu.MDCSimpleMenu(menuEl);
+var menuEl = document.querySelector('#toolbar-menu');
+var menu = new mdc.menu.MDCMenu(menuEl);
 
 // toggle menu
-var toggle = document.querySelector('.toggle');
+var toggle = document.querySelector('#toolbar-menu-toggle');
 toggle.addEventListener('click', function() {
     menu.open = !menu.open;
-});
-
-// handle menu item clicks
-menuEl.addEventListener('MDCSimpleMenu:selected', function(evt) {
-    const menuItem = evt.detail.item;
-    switch (menuItem.textContent.trim()) {
-        case "GitHub":
-            location.href = "https://github.com/faheel/Live-Markdown-Editor";
-            break;
-    }
 });
 
 

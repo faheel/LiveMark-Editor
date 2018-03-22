@@ -1,7 +1,6 @@
 body {
-  max-width: 75rem;
+  max-width: 120rem;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   color: #333;
 }
@@ -12,6 +11,11 @@ body {
 
 .mdc-toolbar__title {
   overflow: visible;
+}
+
+.mdc-menu__items .mdc-list-item * {
+  color: inherit;
+  text-decoration: none;
 }
 
 div:focus {
